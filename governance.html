@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Gilroy Yamoto Hot Springs</a>
+						<a href="index.html" class="logo">Gilroy Yamato Hot Springs</a>
 					</header>
 
 				<!-- Nav -->
@@ -41,10 +41,12 @@
 					<div id="main">
 
 						<!-- Post -->
+
 							<section class="post">
 								<h2 style="text-align: left;">Board Positions</h2>
 									<p>We are seeking board members to help further our mission of preserving the history of this site while also expanding low-impact access to the public. Please see below for a list of open board positions.</p>
 								<hr />
+
 								<h3>Board Member - Finance & Fiduciary Oversight</h3>
 									<p><i>Ensuring financial integrity, accountability, and long-term sustainability</i></p>
 									<p style="line-height: 1.4;">This board member provides financial governance and oversight to ensure the organization maintains strong fiscal controls, transparency, and compliance with nonprofit best practices. They advise on budgeting, financial reporting, internal controls, and audit readiness, supporting responsible stewardship of public and philanthropic funds. This role is critical to building trust with grantmakers, donors, and public agencies.</p>
@@ -87,18 +89,25 @@
 								<!-- Form -->
 									<h2 id="apply">Apply to be on the board</h2>
 
-									<form method="post" action="#">
+									<form name="board-application" method="post" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+										<input type="hidden" name="form-name" value=board-application" />
+										
+										<!-- Honeypot -->
+										<p style="display:none;">
+ 										   <label>Don’t fill this out: <input name="bot-field" /></label>
+ 										</p>
+
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" required />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" required />
 											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
+												<select name="board_position" id="board_position">
+													<option value="">- Board Position -</option>
 													<option value="1">Board Member - Finance & Fiduciary Oversight</option>
 													<option value="1">Board Member – Legal & Land-Use Affairs</option>
 													<option value="1">Board Member – Historic Preservation & Cultural Resources</option>
@@ -106,25 +115,25 @@
 													<option value="1">Board Member – Water Resources & Geothermal Stewardship</option>
 													<option value="1">Board Member – Architecture & Historic Structures</option>
 												</select>
+
+											</div>
+											
+
+											</div>
+											<div class="col-5 col-12-xsmall">
+												<input type="text" name="linkedin_url" id="linked in-url" value="" placeholder="Provide LinkedIn URL" />
+											</div>
+											<br>
+											<div class="col-2 col-12-xsmall align-center" style="line-height:3rem;">
+											<strong>OR</strong> 
 											</div>
 											<form action="/upload-endpoint" method="post" enctype="multipart/form-data">
-    												<label for="file-upload">Select file:</label>
-   												<input type="file" id="file-upload" name="file-to-upload">
-											</form><br>
-											<!-- Break -->
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
+											<div class="col-5 col-12-xsmall">
+    												<label for="file-upload">Add Resume:</label>
+   												<input type="file" id="resume-upload" name="resume-to-upload">
 											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human">
-												<label for="demo-human">I am a human</label>
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<!-- Break -->
+											</form>
+
 											<div class="col-12">
 												<ul class="actions">
 													<li><input type="submit" value="Submit" class="primary" /></li>
@@ -144,6 +153,10 @@
 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 							</ul>
+							<div class="col-5 col-12-xsmall"><h3>Email</h3>
+							</div>
+							<div class="col-5 col-12-xsmall">info@gyhotsprings.org
+							</div>
 						</section>
 					</footer>
 		
@@ -152,7 +165,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Gilroy Yamoto Hot Springs Land Trust</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Gilroy Yamato Hot Springs Land Trust</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 
